@@ -1,3 +1,7 @@
+head {  text-align:left;
+	color:rgb(198,42,12);
+	background-color:rgb(80,12,13);
+     }
 body{color : rgb(30, 11, 1);
     background-color : rgb(97, 221, 170);
 
@@ -8,15 +12,40 @@ h1{ text-align: center;
 h2   {  color:pink;
         background-color:rgb(120,20,5);
         text-align:left;
-
      }
+ pre { text-align:center;
+            font-size :30px;
+     	   color:rgb(204, 255, 255);
+          }
 p    { text-align:center;
-       font-size :30px;
+       font-size :20px;
 	   font-weight:bold;
      }
 p1{ text-align:left;
-	color:pink;
+    font-size :20px;
+	color:rgb(175, 34, 15);
 }
+p2    { text-align:left;
+       font-size :30px;
+     }
+p3{  text-align: left;
+	font-size:30px;
+	color:#6d2b39;
+
+}
+.button {
+    background-color: rgb(255,204,204);
+    border: none;
+    color:rgb(80,12,13) ;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 p7{ text-align:center;
            font-size :12px;
     	   font-weight:bold;
@@ -26,7 +55,9 @@ p8{      text-align:center;
     	   font-weight:bold;
 
 }
-div{    border: 2px solid black;
+div{  text-align:center;
+       font-size :30px;
+      border: 2px solid black;
     height:215px;
     width: 388px;
     margin-top: 60px;

@@ -1,0 +1,97 @@
+
+1:53 PM 12/5/2017
+GITBASH commands on Tues2017Dec5 to display gymtimeaddList.html THROUGH the browser.
+
+
+cody@LAPTOP-TO4068AG MINGW64 /
+$ cd gitcode/1USEthis2017Oct25/gymtime
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ conda env list
+# conda environments:
+#
+env_flask                C:\Miniconda3\envs\env_flask
+envindia_flask           C:\Miniconda3\envs\envindia_flask
+hello-flask              C:\Miniconda3\envs\hello-flask
+helloflask               C:\Miniconda3\envs\helloflask
+root                  *  C:\Miniconda3
+
+
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ source activate env_flask
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+Traceback (most recent call last):
+  File "maingym.py", line 32, in <module>
+    @app.route("/exerhours")
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1080,
+ in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 64, i
+n wrapper_func
+    return f(self, *args, **kwargs)
+  File "C:\Miniconda3\envs\env_flask\lib\site-packages\flask\app.py", line 1051,
+ in add_url_rule
+    'existing endpoint function: %s' % endpoint)
+AssertionError: View function mapping is overwriting an existing endpoint functi
+on: exerhours
+(env_flask)
+cody@LAPTOP-TO4068AG MINGW64 /gitcode/1USEthis2017Oct25/gymtime (master)
+$ python maingym.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Detected change in 'C:\\Users\\cody\\Downloads\\Git\\gitcode\\1USEthis2017Oct
+25\\gymtime\\maingym.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-362-096
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [05/Dec/2017 13:16:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:16:09] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:16:33] "GET /test HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:16:34] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:17:17] "GET /india?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:30:00] "GET / HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:31:09] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:31:17] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:31:17] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:31:22] "GET /india?usrmail= HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:34:55] "GET / HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:35:12] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:35:33] "GET /india/exerhours HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:35:43] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:35:43] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:35:45] "GET /india?usrmail= HTTP/1.1" 200 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:37:56] "GET /india HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:04] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:04] "GET /gymtimestyling/gymtimestyle2.css HTTP
+/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:38:45] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:45] "GET /templates/gymtimestyling/gymtimestyle
+2.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2017 13:38:47] "GET /exerhours HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2017 13:38:47] "GET /templates/gymtimestyling/gymtimestyle
+2.css HTTP/1.1" 404 -
+python enabled to print this
+127.0.0.1 - - [05/Dec/2017 13:42:19] "GET /india?usrmail=hannahmoses612%40gmail.
+com HTTP/1.1" 200 -
+
+
