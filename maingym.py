@@ -32,7 +32,9 @@ def index():
 def hello():
     myfirstname = request.form['myfirstname']
     return '<h1> Hello, ' + myfirstname +'<h1>'
-
+@app.route("/new")
+def new():
+    return render_template("gymtimeaddList.html")
 app.run()
 
 
