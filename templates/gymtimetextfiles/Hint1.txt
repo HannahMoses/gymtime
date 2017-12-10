@@ -1,3 +1,29 @@
+
+
+6:50 AM 12/10/2017
+Git commands
+git status
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin 
+git push origin master
+
+CONDA
+coda env list
+source activate env_flask
+python main.py
+source deactivate
+exit
+
+
+
+
+
+
+
+
+=======+++++++============
 validation to ensure user-submotted data makes sense
 Not break our application
 user-friendly feedback
