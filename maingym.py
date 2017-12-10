@@ -35,6 +35,9 @@ def hello():
 @app.route("/new")
 def new():
     return render_template("gymtimeaddList.html")
+@app.route("/ipform")
+def ipform():
+    return render_template("ipform.html")
 app.run()
 
 
